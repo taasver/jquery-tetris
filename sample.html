@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris Sample</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        
+        <div id="container">
+            <div id="inside_container">
+                <div id="tetris-container"></div>
+            </div>
+        </div>
+
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="js/tetris-1.1.js"></script>
+        <script>
+            $(window).load(function() {
+//                $('#tetris-container').tetris({saveservice:"/db/scores.php"});
+                $('#tetris-container').tetris();
+            });
+        </script>
+
+    </body>
+</html>

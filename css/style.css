@@ -1,0 +1,170 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+html {
+  font-family:"Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color:#FAF7E2;
+  color: #776E65;
+}
+
+body {
+  overflow:hidden;
+}
+
+#tetris-container {
+  height:100%;
+}
+
+.cell {
+  float:left;
+  margin:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+
+.cell_empty {
+  background-color:#FFFFFF;
+}
+
+.cell_next {
+  background-color:#D8EAF2;
+}
+
+.cell_full {
+  background-color:#90D3F2;
+}
+
+.top {
+  list-style-type:none;
+  font-size: 0.75em;
+}
+
+.button {
+  background:#776E65;
+  color:#FAF7E2;
+  text-decoration:none;
+  cursor: pointer;
+  text-align:center;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  margin:2px;
+}
+
+.filter {
+	font-size:0.5em;
+}
+	
+.filter a {
+	cursor:pointer;
+}
+
+.game_info{
+  /* http://hex2rgba.devoth.com/ */
+  background: rgb(250, 247, 226);
+  background: rgba(250, 247, 226, 0.8);
+  font-size: 2em;
+  font-weight:bold;
+  text-align:center;
+  position:absolute;
+  top:30%;
+  width:inherit;
+  padding-top:2%;
+  padding-bottom:2%;
+  display:none;
+}
+
+.text1 {
+  font-size:0.6em;
+}
+
+.text2 {
+  font-size:0.4em;
+}
+
+#score_submit {
+  border-radius:3px;
+  padding:0 20px;
+  font-size:0.75em;
+  height:40px;
+  line-height:42px;
+  width:70%;
+  display:block;
+  margin:10px auto;
+}
+
+#container {
+  left:50%;
+  position:absolute;
+  margin:2px 0;
+  height:98%;
+}
+
+#inside_container {
+  position:relative;
+  left:-50%;
+  height:100%;
+  width:120%;
+}
+
+#tetris-grid {
+  display:inline-block;
+  float:left;
+  height:100%;
+}
+
+#tetris-grid-info {
+  height:inherit;
+  display:inline-block;
+  float:left;
+  position:absolute;
+  font-size:1.2em;
+  text-align:center;
+}
+
+#score {
+  background-color:#FFFFFF;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  margin:2px;
+}
+
+#level {
+  font-size:0.7em;
+}
+
+#restart {
+  display:block;
+  font-size:1.4em;
+  font-weight:bold;
+  margin-top:4px;
+  line-height:38px; 
+}
+
+#name_text {
+  font-size:0.85em;
+}
+
+#name_box {
+  margin:5px;
+  font-size:1em;
+}
+
+#about_button {
+  display:block;
+  font-size:1.4em;
+  font-weight:bold;
+  line-height:38px;
+  margin-top:4px;
+  position:absolute;
+}
+
+#close_about {
+  display:inline-block;
+  font-weight:normal;
+  font-size:0.9em;
+  float:right;
+  position:relative;
+  top:-4px;
+}
