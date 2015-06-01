@@ -10,4 +10,4 @@ Sample usage:
   1. Create a div: <div id="tetris-container"></div>
   2. $('#tetris-container').tetris();
 
-Sample: http://lapsesuu.ee/tetris
+Sample: http://lapsesuu.ee/tetris/sample.html
