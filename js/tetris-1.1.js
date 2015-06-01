@@ -196,10 +196,10 @@
                  $submitInfo = $('<div/>', {id: 'submit_info'});
                  $submitName = $('<input/>', {id: 'name_box', type: 'text'});
                  var $submitNameText = $('<span/>', {id: 'name_text', text: settings.labelyourname} + ' ').append($submitName);
-                 $submitBtn = $('<a/>', {id: 'score_submit', class: 'button', html: '<br>' + settings.labelsubmitscore}).on('click', submitScore);
-                 $submitInfo.append([$submitNameText]);
+                 $submitBtn = $('<a/>', {id: 'score_submit', class: 'button', text: settings.labelsubmitscore}).on('click', submitScore);
+                 $submitInfo.append([$submitNameText,'<br>',$submitBtn]);
                  var $filter = $('<div />', {class: 'filter'});
-                 $filterAll = $('<a/>', {id: 'all_time', text: settings.labelallname}).on('click', updateTop);
+                 $filterAll = $('<a/>', {id: 'all_time', text: settings.labelalltime + ' '}).on('click', updateTop);
                  $filterWeek = $('<a/>', {id: 'last_week', text: settings.labellast7days}).on('click', function() {updateTop(false);});
                  $filter.append([$filterAll, $filterWeek]);
                 $results.append([$submitInfo, $filter]);
